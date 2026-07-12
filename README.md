@@ -40,8 +40,9 @@ $ docker compose up -d
 ```  
 or  
 ```
-$ docker run -d --name my-httpd -p 8080:8080  -p 443:443 -v \  
-  /home/app/apache2/htdocs:/usr/local/apache2/htdocs dhi.io/httpd:2.4.68-debian13
+$ docker run -d --name my-httpd -p 8080:8080  -p 443:443 \  
+  -v /home/app/apache2/htdocs:/usr/local/apache2/htdocs \
+  dhi.io/httpd:2.4.68-debian13
 ```
 
 NOTE:
