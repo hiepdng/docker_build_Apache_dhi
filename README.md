@@ -1,6 +1,4 @@
-## Web server application
-https://hub.docker.com/_/httpd
-https://hub.docker.com/_/php/tags?page=3
+## Apache server using Docker Hardened Image (DHI)
 
 This repository is used to create an Apache web server based on Apache [Docker Hardened Image (DHI)](https://hub.docker.com/hardened-images/catalog/dhi/httpd)  
 Files provided:  
