@@ -15,15 +15,15 @@ Files provided:
 
 ### Pre-configuration:
 - Run the script.sh:  
-**$ sh script.sh**
+`$ sh script.sh`
 
 - Create SSL Certificate: see [httpd.apache.org](https://httpd.apache.org/docs/2.4/ssl/ssl_faq.html) more mode details
   - Create a self-signed SSL Certificate for testing purposes:  
-    **$ openssl genrsa -des3 -out server.key.secure 2048**  
-    **$ openssl rsa -noout -text -in server.key**  
-    **$ openssl rsa -in server.key.secure -out server.key**   (decrypted, used for auto start web withour password)  
-    **$ openssl req -new -x509 -nodes -sha1 -days 365 -key server.key -out server.crt -extensions usr_cert**  
-    **$ openssl x509 -noout -text -in server.crt**
+    `$ openssl genrsa -des3 -out server.key.secure 2048`  
+    `$ openssl rsa -noout -text -in server.key`  
+    `$ openssl rsa -in server.key.secure -out server.key`   (decrypted, used for auto start web withour password)  
+    `$ openssl req -new -x509 -nodes -sha1 -days 365 -key server.key -out server.crt -extensions usr_cert`  
+    `$ openssl x509 -noout -text -in server.crt`  
 
   - Create a real SSL Certificate:  
     See [httpd.apache.org](https://httpd.apache.org/docs/2.4/ssl/ssl_faq.html)
