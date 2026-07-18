@@ -21,7 +21,7 @@ Files provided:
   - Create a self-signed SSL Certificate for testing purposes:  
     `$ openssl genrsa -des3 -out server.key.secure 2048`  
     `$ openssl rsa -noout -text -in server.key.secure`  
-    `$ openssl rsa -in server.key.secure -out server.key`   (decrypted, used for auto start web withour password)  
+    `$ openssl rsa -in server.key.secure -out server.key`   (decrypted, used for auto start web without password)  
     `$ openssl req -new -x509 -nodes -sha1 -days 365 -key server.key -out server.crt -extensions usr_cert`  
     `$ openssl x509 -noout -text -in server.crt`  
 
